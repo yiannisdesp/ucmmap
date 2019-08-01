@@ -1,8 +1,8 @@
 var map,
-    lang = 'en',
+    lang = 'el',
     kmlDataSources = {
         nicosia: 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/kml/nicosia-district-'+ lang +'.kml?t=' + Date.now(),
-        larnaca: '',
+        larnaca: 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/kml/larnaca-district-'+ lang +'.kml?t=' + Date.now()',
         famagusta: '',
         limassol: 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/kml/limassol-district-'+ lang +'.kml?t=' + Date.now(),
         kerynia: '',
