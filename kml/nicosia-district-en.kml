@@ -20,6 +20,12 @@
                 <width>1</width>
                 <gx:outerColor>501478A0</gx:outerColor>
             </LineStyle>
+			<PolyStyle>
+				<color>501478A0</color>
+				<colorMode>normal</colorMode>
+				<fill>1</fill>
+				<outline>1</outline>
+			</PolyStyle>
 		</Style>
 		<Folder id="FeatureLayer0">
 			<name>NICOSIA MUNICIPALITIES</name>
