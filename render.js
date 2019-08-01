@@ -1,5 +1,5 @@
 var map,
-    lang = 'el',
+    lang = 'en',
     kmlDataSources = {
         nicosia: 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/kml/nicosia-district-'+ lang +'.kml',
         larnaca: '',
