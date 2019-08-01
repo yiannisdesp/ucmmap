@@ -1,23 +1,26 @@
 var map,
-    lang = 'el',
+    lang = 'en',
     kmlDataSources = {
-        nicosia: 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/kml/nicosia-district-'+ lang +'.kml?t=' + Date.now(),
-        larnaca: 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/kml/larnaca-district-'+ lang +'.kml?t=' + Date.now(),
+        lefkosia: 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/kml/lefkosia-district-'+ lang +'.kml?t=' + Date.now(),
+        larnaka: 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/kml/larnaka-district-'+ lang +'.kml?t=' + Date.now(),
         ammochostos: 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/kml/ammochostos-district-'+ lang +'.kml?t=' + Date.now(),
-        limassol: 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/kml/limassol-district-'+ lang +'.kml?t=' + Date.now(),
+        lemesos: 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/kml/lemesos-district-'+ lang +'.kml?t=' + Date.now(),
         keryneia: 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/kml/keryneia-district-'+ lang +'.kml?t=' + Date.now(),
         paphos: 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/kml/paphos-district-'+ lang +'.kml?t=' + Date.now(),
     },
     layers = {},
     districtMarkers = {
-        nicosia: {},
-        larnaca: {},
+        lefkosia: {},
+        larnaka: {},
         ammochostos: {
             latlng: {lat: 35.185567, lng: 33.745410},
             obj: {},
-            path: 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/svgs/ammochostos-' + lang + '.svg'
+            paths: {
+                en: 'data:image/svg+xml;utf-8, <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1024 768" style="enable-background:new 0 0 1024 768;" xml:space="preserve"><rect x="353" y="361.5" style="opacity:0.54;" width="307" height="41"/><text transform="matrix(1 0 0 1 361.6455 393.6019)" style="fill:#F9F4F4; font-family:\'ArialMT\'; font-size:36px;">AMMOCHOSTOS</text></svg>',
+                el: 'data:image/svg+xml;utf-8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256.82 42.58"><defs><style>.cls-1{font-size:36px;font-family:ArialMT, Arial;}.cls-2{letter-spacing:-0.02em;}</style></defs><title>ammochostos-el</title><text class="cls-1" transform="translate(0.06 30.89)">ΑΜΜΟΧΩΣ<tspan class="cls-2" x="185.17" y="0">Τ</tspan><tspan x="206.51" y="0">ΟΣ</tspan></text></svg>'
+            }
         },
-        limassol: {},
+        lemesos: {},
         keryneia: {},
         paphos: {}
     };
@@ -36,14 +39,18 @@ function initMap(){
             map: map
         });
         // add district text as a marker
-        districtMarkers[k].obj = new google.maps.Marker({
-            position: districtMarkers[k].latlng,
-            map: map,
-            icon: {
-                url: districtMarkers[k].path,
-                size: new google.maps.Size(32, 32),
-                scaledSize: new google.maps.Size(20, 20)
-            }
-        });
+        if ( districtMarkers[k].hasOwnProperty('latlng') ){
+            districtMarkers[k].obj = new google.maps.Marker({
+                position: districtMarkers[k].latlng,
+                map: map,
+                icon: {
+                    url: districtMarkers[k].paths[lang],
+                    size: new google.maps.Size(150, 23),
+                    scaledSize: new google.maps.Size(150, 23),
+                    origin: new google.maps.Point(0,0), // origin
+                    anchor: new google.maps.Point(0, 0) // anchor
+                }
+            });
+        }
     }
 }
