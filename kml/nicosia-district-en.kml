@@ -12,8 +12,14 @@
 		<Style id="documentStyle">
 			<ColorStyle>
 				<colorMode>normal</colorMode>
-				<color>5014F050</color>
+				<color>5078F078</color>
 			</ColorStyle>
+            <LineStyle>
+                <color>501478A0</color>
+                <colorMode>normal</colorMode>
+                <width>1</width>
+                <gx:outerColor>501478A0</gx:outerColor>
+            </LineStyle>
 		</Style>
 		<Folder id="FeatureLayer0">
 			<name>NICOSIA MUNICIPALITIES</name>
