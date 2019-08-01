@@ -10,21 +10,11 @@
 		<description></description>
 		<Snippet></Snippet>
 		<Style id="documentStyle">
-			<ColorStyle>
-				<colorMode>normal</colorMode>
-				<color>5078F078</color>
-			</ColorStyle>
-            <LineStyle>
-                <color>501478A0</color>
-                <colorMode>normal</colorMode>
-                <width>1</width>
-                <gx:outerColor>501478A0</gx:outerColor>
-            </LineStyle>
 			<PolyStyle>
-				<color>501478A0</color>
+				<color>50007814</color>
 				<colorMode>normal</colorMode>
 				<fill>1</fill>
-				<outline>1</outline>
+				<outline>10</outline>
 			</PolyStyle>
 		</Style>
 		<Folder id="FeatureLayer0">
