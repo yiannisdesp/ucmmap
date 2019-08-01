@@ -4,7 +4,7 @@ var map,
         nicosia: 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/kml/nicosia-district-'+ lang +'.kml',
         larnaca: '',
         famagusta: '',
-        limassol: '',
+        limassol: 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/kml/limassol-district-'+ lang +'.kml',
         kerynia: '',
         paphos: ''
     },
