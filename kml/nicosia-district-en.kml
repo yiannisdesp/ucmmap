@@ -10,10 +10,10 @@
 		<description></description>
 		<Snippet></Snippet>
 		<Style id="documentStyle">
-			<IconStyle>
+			<ColorStyle>
 				<colorMode>normal</colorMode>
 				<color>5014F050</color>
-			</IconStyle>
+			</ColorStyle>
 		</Style>
 		<Folder id="FeatureLayer0">
 			<name>NICOSIA MUNICIPALITIES</name>

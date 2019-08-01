@@ -10,10 +10,10 @@
 		<description></description>
 		<Snippet></Snippet>
 		<Style id="documentStyle">
-			<IconStyle>
+			<ColorStyle>
 				<colorMode>random</colorMode>
 				<color>5078F078</color>
-			</IconStyle>
+			</ColorStyle>
 		</Style>
 		<Folder id="limassol-municipalities-layer">
 			<name>LIMASSOL MUNICIPALITIES</name>
