@@ -5,17 +5,23 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
 	<Document id="Layers">
-		<name>Δήμοι</name>
+		<name>Municipalities</name>
 		<open>1</open>
-		<description>Εξάγηκαν από Τμήμα Κτηματολογίου και Χωρομετρίας</description>
+		<description></description>
 		<Snippet></Snippet>
+		<Style id="documentStyle">
+			<IconStyle>
+				<colorMode>normal</colorMode>
+				<color>ff0000cc</color>
+			</IconStyle>
+		</Style>
 		<Folder id="FeatureLayer0">
-			<name>ΔΗΜΟΙ</name>
+			<name>NICOSIA MUNICIPALITIES</name>
 			<Placemark id="ID_00474">
 				<name>DIMOS AGIOU DOMETIOU</name>
 				<Snippet></Snippet>
 				<description></description>
-				<styleUrl>#PolyStyle00</styleUrl>
+				<styleUrl>#documentStyle</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -42,7 +48,7 @@
 				<name>DIMOS AGLANTZIAS</name>
 				<Snippet></Snippet>
 				<description></description>
-				<styleUrl>#PolyStyle00</styleUrl>
+				<styleUrl>#documentStyle</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -79,7 +85,7 @@
 				<name>DIMOS GERIOU</name>
 				<Snippet></Snippet>
 				<description></description>
-				<styleUrl>#PolyStyle00</styleUrl>
+				<styleUrl>#documentStyle</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -96,7 +102,7 @@
 				<name>DIMOS EGKOMIS</name>
 				<Snippet></Snippet>
 				<description></description>
-				<styleUrl>#PolyStyle00</styleUrl>
+				<styleUrl>#documentStyle</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -133,7 +139,7 @@
 				<name>DIMOS IDALIOU</name>
 				<Snippet></Snippet>
 				<description></description>
-				<styleUrl>#PolyStyle00</styleUrl>
+				<styleUrl>#documentStyle</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -160,7 +166,7 @@
 				<name>DIMOS KYTHREAS</name>
 				<Snippet></Snippet>
 				<description></description>
-				<styleUrl>#PolyStyle00</styleUrl>
+				<styleUrl>#documentStyle</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -177,7 +183,7 @@
 				<name>DIMOS LAKATAMEIAS</name>
 				<Snippet></Snippet>
 				<description></description>
-				<styleUrl>#PolyStyle00</styleUrl>
+				<styleUrl>#documentStyle</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -214,7 +220,7 @@
 				<name>DIMOS LATSION</name>
 				<Snippet></Snippet>
 				<description></description>
-				<styleUrl>#PolyStyle00</styleUrl>
+				<styleUrl>#documentStyle</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -241,7 +247,7 @@
 				<name>DIMOS LEFKOSIAS</name>
 				<Snippet></Snippet>
 				<description></description>
-				<styleUrl>#PolyStyle00</styleUrl>
+				<styleUrl>#documentStyle</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -258,7 +264,7 @@
 				<name>DIMOS MORFOU</name>
 				<Snippet></Snippet>
 				<description></description>
-				<styleUrl>#PolyStyle00</styleUrl>
+				<styleUrl>#documentStyle</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -285,7 +291,7 @@
 				<name>DIMOS STROVOLOU</name>
 				<Snippet></Snippet>
 				<description></description>
-				<styleUrl>#PolyStyle00</styleUrl>
+				<styleUrl>#documentStyle</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -312,7 +318,7 @@
 				<name>DIMOS TSERIOU</name>
 				<Snippet></Snippet>
 				<description></description>
-				<styleUrl>#PolyStyle00</styleUrl>
+				<styleUrl>#documentStyle</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>

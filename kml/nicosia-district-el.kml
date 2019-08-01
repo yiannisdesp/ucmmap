@@ -7,15 +7,21 @@
 	<Document id="Layers">
 		<name>Δήμοι</name>
 		<open>1</open>
-		<description>Εξάγηκαν από Τμήμα Κτηματολογίου και Χωρομετρίας</description>
+		<description></description>
 		<Snippet></Snippet>
-		<Folder id="FeatureLayer0">
-			<name>ΔΗΜΟΙ</name>
+		<Style id="documentStyle">
+			<IconStyle>
+				<colorMode>normal</colorMode>
+				<color>ff0000cc</color>
+			</IconStyle>
+		</Style>
+		<Folder id="nicosia-municipalities-layer">
+			<name>ΔΗΜΟΙ ΛΕΥΚΩΣΙΑΣ</name>
 			<Placemark id="ID_00474">
 				<name>ΔΗΜΟΣ ΑΓΙΟΥ ΔΟΜΕΤΙΟΥ</name>
 				<Snippet></Snippet>
 				<description></description>
-				<styleUrl>#PolyStyle00</styleUrl>
+				<styleUrl>#documentStyle</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -42,7 +48,7 @@
 				<name>ΔΗΜΟΣ ΑΓΛΑΝΤΖΙΑΣ</name>
 				<Snippet></Snippet>
 				<description></description>
-				<styleUrl>#PolyStyle00</styleUrl>
+				<styleUrl>#documentStyle</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -79,7 +85,7 @@
 				<name>ΔΗΜΟΣ ΓΕΡΙΟΥ</name>
 				<Snippet></Snippet>
 				<description></description>
-				<styleUrl>#PolyStyle00</styleUrl>
+				<styleUrl>#documentStyle</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -96,7 +102,7 @@
 				<name>ΔΗΜΟΣ ΕΓΚΩΜΗΣ</name>
 				<Snippet></Snippet>
 				<description></description>
-				<styleUrl>#PolyStyle00</styleUrl>
+				<styleUrl>#documentStyle</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -133,7 +139,7 @@
 				<name>ΔΗΜΟΣ ΙΔΑΛΙΟΥ</name>
 				<Snippet></Snippet>
 				<description></description>
-				<styleUrl>#PolyStyle00</styleUrl>
+				<styleUrl>#documentStyle</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -160,7 +166,7 @@
 				<name>ΔΗΜΟΣ ΚΥΘΡΕΑΣ</name>
 				<Snippet></Snippet>
 				<description></description>
-				<styleUrl>#PolyStyle00</styleUrl>
+				<styleUrl>#documentStyle</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -177,7 +183,7 @@
 				<name>ΔΗΜΟΣ ΛΑΚΑΤΑΜΕΙΑΣ</name>
 				<Snippet></Snippet>
 				<description></description>
-				<styleUrl>#PolyStyle00</styleUrl>
+				<styleUrl>#documentStyle</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -214,7 +220,7 @@
 				<name>ΔΗΜΟΣ ΛΑΤΣΙΩΝ</name>
 				<Snippet></Snippet>
 				<description></description>
-				<styleUrl>#PolyStyle00</styleUrl>
+				<styleUrl>#documentStyle</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -241,7 +247,7 @@
 				<name>ΔΗΜΟΣ ΛΕΥΚΩΣΙΑΣ</name>
 				<Snippet></Snippet>
 				<description></description>
-				<styleUrl>#PolyStyle00</styleUrl>
+				<styleUrl>#documentStyle</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -258,7 +264,7 @@
 				<name>ΔΗΜΟΣ ΜΟΡΦΟΥ</name>
 				<Snippet></Snippet>
 				<description></description>
-				<styleUrl>#PolyStyle00</styleUrl>
+				<styleUrl>#documentStyle</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -285,7 +291,7 @@
 				<name>ΔΗΜΟΣ ΣΤΡΟΒΟΛΟΥ</name>
 				<Snippet></Snippet>
 				<description></description>
-				<styleUrl>#PolyStyle00</styleUrl>
+				<styleUrl>#documentStyle</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
@@ -312,7 +318,7 @@
 				<name>ΔΗΜΟΣ ΤΣΕΡΙΟΥ</name>
 				<Snippet></Snippet>
 				<description></description>
-				<styleUrl>#PolyStyle00</styleUrl>
+				<styleUrl>#documentStyle</styleUrl>
 				<MultiGeometry>
 					<Polygon>
 						<extrude>0</extrude>
