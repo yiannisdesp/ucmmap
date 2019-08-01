@@ -11,7 +11,7 @@
 		<Snippet></Snippet>
 		<Style id="documentStyle">
 			<IconStyle>
-				<colorMode>normal</colorMode>
+				<colorMode>random</colorMode>
 				<color>5078F078</color>
 			</IconStyle>
 		</Style>
