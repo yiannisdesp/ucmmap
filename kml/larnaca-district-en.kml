@@ -24,11 +24,7 @@
 				<Snippet></Snippet>
 				<description></description>
 				<styleUrl>#documentStyle</styleUrl>
-				<Point>
-					<altitudeMode>clampToGround</altitudeMode>
-					<coordinates> 33.54219377472085,35.05971015680192</coordinates>
-				</Point>
-			</Placemark>
+							</Placemark>
 			<Placemark id="ID_00324">
 				<name>ATHIENOU</name>
 				<Snippet></Snippet>
@@ -51,11 +47,7 @@
 				<Snippet></Snippet>
 				<description></description>
 				<styleUrl>#documentStyle</styleUrl>
-				<Point>
-					<altitudeMode>clampToGround</altitudeMode>
-					<coordinates> 33.57522128836301,34.95660792806021</coordinates>
-				</Point>
-			</Placemark>
+							</Placemark>
 			<Placemark id="ID_00321">
 				<name>ARADIPPOU</name>
 				<Snippet></Snippet>
@@ -95,11 +87,7 @@
 				<Snippet></Snippet>
 				<description></description>
 				<styleUrl>#documentStyle</styleUrl>
-				<Point>
-					<altitudeMode>clampToGround</altitudeMode>
-					<coordinates> 33.58895836416713,34.87886714729691</coordinates>
-				</Point>
-			</Placemark>
+							</Placemark>
 			<Placemark id="ID_00320">
 				<name>LARNAKA</name>
 				<Snippet></Snippet>
@@ -122,21 +110,13 @@
 				<Snippet></Snippet>
 				<description></description>
 				<styleUrl>#documentStyle</styleUrl>
-				<Point>
-					<altitudeMode>clampToGround</altitudeMode>
-					<coordinates> 33.61980839226723,34.90054640322215</coordinates>
-				</Point>
-			</Placemark>
+							</Placemark>
 			<Placemark id="ID_10322">
 				<name>LIVADIA</name>
 				<Snippet></Snippet>
 				<description></description>
 				<styleUrl>#documentStyle</styleUrl>
-				<Point>
-					<altitudeMode>clampToGround</altitudeMode>
-					<coordinates> 33.63379090677893,34.95605768891581</coordinates>
-				</Point>
-			</Placemark>
+							</Placemark>
 			<Placemark id="ID_00322">
 				<name>LIVADIA</name>
 				<Snippet></Snippet>
@@ -176,11 +156,7 @@
 				<Snippet></Snippet>
 				<description></description>
 				<styleUrl>#documentStyle</styleUrl>
-				<Point>
-					<altitudeMode>clampToGround</altitudeMode>
-					<coordinates> 33.31013016400203,34.88662938364818</coordinates>
-				</Point>
-			</Placemark>
+							</Placemark>
 		</Folder>
 	</Document>
 </kml>
