@@ -4,8 +4,8 @@
 	xmlns:gx="http://www.google.com/kml/ext/2.2"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
  xsi:schemaLocation="http://www.opengis.net/kml/2.2 http://schemas.opengis.net/kml/2.2.0/ogckml22.xsd http://www.google.com/kml/ext/2.2 http://code.google.com/apis/kml/schema/kml22gx.xsd">
-	<Document id="limassolLayer">
-		<name>Municipalities in Keryneia District</name>
+	<Document id="keryneiaLayer">
+		<name>Δήμοι Κερύνειας</name>
 		<open>1</open>
 		<Snippet></Snippet>
 		<Style id="documentStyle">
@@ -16,8 +16,8 @@
 				<outline>10</outline>
 			</PolyStyle>
 		</Style>
-		<Folder id="limassol-municipalities-layer">
-			<name>KERYNEIA MUNICIPALITIES</name>
+		<Folder id="keryneia-municipalities-layer">
+			<name>ΔΗΜΟΙ ΚΕΡΥΝΕΙΑΣ</name>
 			<Placemark id="ID_00043">
 				<name>ΔΗΜΟΣ ΚΑΡΑΒΑ</name>
 				<Snippet></Snippet>

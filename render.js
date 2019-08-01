@@ -3,10 +3,10 @@ var map,
     kmlDataSources = {
         nicosia: 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/kml/nicosia-district-'+ lang +'.kml?t=' + Date.now(),
         larnaca: 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/kml/larnaca-district-'+ lang +'.kml?t=' + Date.now(),
-        famagusta: '',
+        famagusta: 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/kml/ammochostos-district-'+ lang +'.kml?t=' + Date.now(),
         limassol: 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/kml/limassol-district-'+ lang +'.kml?t=' + Date.now(),
         keryneia: 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/kml/keryneia-district-'+ lang +'.kml?t=' + Date.now(),
-        paphos: ''
+        paphos: 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/kml/paphos-district-'+ lang +'.kml?t=' + Date.now(),
     },
     layers = {};
 
