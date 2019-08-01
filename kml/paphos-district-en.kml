@@ -35,12 +35,12 @@
 				</MultiGeometry>
 			</Placemark>
 			<Placemark id="ID_30018">
-				<name>ΓΕΡΟΣΚΗΠΟΥ</name>
+				<name>GEROSKIPOU</name>
 				<Snippet></Snippet>
 				<styleUrl>#documentStyle</styleUrl>
 			</Placemark>
 			<Placemark id="ID_00165">
-				<name>DIMOS PAFOU</name>
+				<name>PAFOS</name>
 				<Snippet></Snippet>
 				<styleUrl>#documentStyle</styleUrl>
 				<MultiGeometry>
@@ -56,17 +56,17 @@
 				</MultiGeometry>
 			</Placemark>
 			<Placemark id="ID_10165">
-				<name>ΔΗΜΟΣ ΠΑΦΟΥ</name>
+				<name>PAFOS</name>
 				<Snippet></Snippet>
 				<styleUrl>#documentStyle</styleUrl>
 			</Placemark>
 			<Placemark id="ID_10167">
-				<name>ΔΗΜΟΣ ΠΕΓΕΙΑΣ</name>
+				<name>PEGEIA</name>
 				<Snippet></Snippet>
 				<styleUrl>#documentStyle</styleUrl>
 			</Placemark>
 			<Placemark id="ID_00168">
-				<name>DIMOS P CHRYSOCHOYS</name>
+				<name>POLIS CHRYSOCHOYS</name>
 				<Snippet></Snippet>
 				<styleUrl>#documentStyle</styleUrl>
 				<MultiGeometry>
@@ -82,12 +82,12 @@
 				</MultiGeometry>
 			</Placemark>
 			<Placemark id="ID_10168">
-				<name>ΔΗΜΟΣ Π ΧΡΥΣΟΧΟΥΣ</name>
+				<name>POLIS CHRYSOCHOYS</name>
 				<Snippet></Snippet>
 				<styleUrl>#documentStyle</styleUrl>
 			</Placemark>
 			<Placemark id="ID_00167">
-				<name>DIMOS PEGEIAS</name>
+				<name>PEGEIAS</name>
 				<Snippet></Snippet>
 				<description></description>
 				<styleUrl>#documentStyle</styleUrl>
@@ -131,7 +131,7 @@
 				</MultiGeometry>
 			</Placemark>
 			<Placemark id="ID_10167">
-				<name>ΔΗΜΟΣ ΠΕΓΕΙΑΣ</name>
+				<name>PEGEIA</name>
 				<Snippet></Snippet>
 				<description></description>
 				<styleUrl>#IconStyle10</styleUrl>
