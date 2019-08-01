@@ -18,7 +18,7 @@
 		<Folder id="limassol-municipalities-layer">
 			<name>LIMASSOL MUNICIPALITIES</name>
 			<Placemark id="ID_20143">
-				<name>AGIOS ATHANASIOS</name>
+				<name>ΑΓΙΟΣ ΑΘΑΝΑΣΙΟΣ</name>
 				<Snippet></Snippet>
 				<description></description>
 				<styleUrl>#documentStyle</styleUrl>
@@ -35,7 +35,7 @@
 				</MultiGeometry>
 			</Placemark>
 			<Placemark id="ID_30143">
-				<name>AGIOS ATHANASIOS</name>
+				<name>ΑΓΙΟΣ ΑΘΑΝΑΣΙΟΣ</name>
 				<Snippet></Snippet>
 				<description></description>
 				<styleUrl>#documentStyle</styleUrl>
@@ -45,7 +45,7 @@
 				</Point>
 			</Placemark>
 			<Placemark id="ID_10557">
-				<name>GERMASOGEIA</name>
+				<name>ΔΗΜΟΣ ΓΕΡΜΑΣΟΓΕΙΑΣ</name>
 				<Snippet></Snippet>
 				<description></description>
 				<styleUrl>#documentStyle</styleUrl>
@@ -55,7 +55,7 @@
 				</Point>
 			</Placemark>
 			<Placemark id="ID_00557">
-				<name>GERMASOGEIA</name>
+				<name>ΔΗΜΟΣ ΓΕΡΜΑΣΟΓΕΙΑΣ</name>
 				<Snippet></Snippet>
 				<description></description>
 				<styleUrl>#documentStyle</styleUrl>
@@ -72,7 +72,7 @@
 				</MultiGeometry>
 			</Placemark>
 			<Placemark id="ID_00559">
-				<name>KATO POLEMIDIA</name>
+				<name>ΔΗΜΟΣ ΚΑΤΩ ΠΟΛΕΜΙΔΙΩΝ</name>
 				<Snippet></Snippet>
 				<description></description>
 				<styleUrl>#documentStyle</styleUrl>
@@ -89,7 +89,7 @@
 				</MultiGeometry>
 			</Placemark>
 			<Placemark id="ID_10559">
-				<name>KATO POLEMIDIA</name>
+				<name>ΔΗΜΟΣ ΚΑΤΩ ΠΟΛΕΜΙΔΙΩΝ</name>
 				<Snippet></Snippet>
 				<description></description>
 				<styleUrl>#documentStyle</styleUrl>
@@ -99,7 +99,7 @@
 				</Point>
 			</Placemark>
 			<Placemark id="ID_10566">
-				<name>LEMESOS</name>
+				<name>ΔΗΜΟΣ ΛΕΜΕΣΟΥ</name>
 				<Snippet></Snippet>
 				<description></description>
 				<styleUrl>#documentStyle</styleUrl>
@@ -109,7 +109,7 @@
 				</Point>
 			</Placemark>
 			<Placemark id="ID_00566">
-				<name>LEMESOS</name>
+				<name>ΔΗΜΟΣ ΛΕΜΕΣΟΥ</name>
 				<Snippet></Snippet>
 				<description></description>
 				<styleUrl>#documentStyle</styleUrl>
@@ -126,7 +126,7 @@
 				</MultiGeometry>
 			</Placemark>
 			<Placemark id="ID_10565">
-				<name>MESA GEITONIA</name>
+				<name>ΔΗΜΟΣ ΜΕΣΑ ΓΕΙΤΟΝΙΑΣ</name>
 				<Snippet></Snippet>
 				<description></description>
 				<styleUrl>#documentStyle</styleUrl>
@@ -136,7 +136,7 @@
 				</Point>
 			</Placemark>
 			<Placemark id="ID_00565">
-				<name>MESA GEITONIA</name>
+				<name>ΔΗΜΟΣ ΜΕΣΑ ΓΕΙΤΟΝΙΑΣ</name>
 				<Snippet></Snippet>
 				<description></description>
 				<styleUrl>#documentStyle</styleUrl>
@@ -153,7 +153,7 @@
 				</MultiGeometry>
 			</Placemark>
 			<Placemark id="ID_10558">
-				<name>YPSONAS</name>
+				<name>ΔΗΜΟΣ ΥΨΩΝΑ</name>
 				<Snippet></Snippet>
 				<description></description>
 				<styleUrl>#documentStyle</styleUrl>
@@ -163,7 +163,7 @@
 				</Point>
 			</Placemark>
 			<Placemark id="ID_00558">
-				<name>YPSONAS</name>
+				<name>ΔΗΜΟΣ ΥΨΩΝΑ</name>
 				<Snippet></Snippet>
 				<description></description>
 				<styleUrl>#documentStyle</styleUrl>
