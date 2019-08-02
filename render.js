@@ -16,8 +16,8 @@ var map,
             latlng: {lat: 35.185567, lng: 33.745410},
             obj: {},
             paths: {
-                en: 'data:image/svg+xml;utf-8, <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1024 768" style="enable-background:new 0 0 1024 768;" xml:space="preserve"><rect x="353" y="361.5" style="opacity:0.54;" width="307" height="41"/><text transform="matrix(1 0 0 1 361.6455 393.6019)" style="fill:#F9F4F4; font-family:\'ArialMT\'; font-size:36px;">AMMOCHOSTOS</text></svg>',
-                el: 'data:image/svg+xml;utf-8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256.82 42.58"><defs><style>.cls-1{font-size:36px;font-family:ArialMT, Arial;}.cls-2{letter-spacing:-0.02em;}</style></defs><title>ammochostos-el</title><text class="cls-1" transform="translate(0.06 30.89)">ΑΜΜΟΧΩΣ<tspan class="cls-2" x="185.17" y="0">Τ</tspan><tspan x="206.51" y="0">ΟΣ</tspan></text></svg>'
+                en: 'data:image/svg+xml;utf-8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256.82 42.58"><defs><style>.cls-1{font-size:36px;font-family:Arial;}.cls-2{letter-spacing:-0.02em;}</style></defs><title>ammochostos-en</title><text class="cls-1" transform="translate(0.06 30.89)">AMMOCHOSTOS</text></svg>',
+                el: 'data:image/svg+xml;utf-8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256.82 42.58"><defs><style>.cls-1{font-size:36px;font-family:Arial;}.cls-2{letter-spacing:-0.02em;}</style></defs><title>ammochostos-el</title><text class="cls-1" transform="translate(0.06 30.89)">ΑΜΜΟΧΩΣ<tspan class="cls-2" x="185.17" y="0">Τ</tspan><tspan x="206.51" y="0">ΟΣ</tspan></text></svg>'
             }
         },
         lemesos: {},
