@@ -1,1 +1,2 @@
-Municipality boundaries kml data by @OpenDataCy rendered in Google Maps.
+:floppy_disk: Municipality boundaries kml data by [@OpenDataCy](https://www.data.gov.cy) rendered in Google Maps.  
+:globe_with_meridians: Language support for English and Greek (detected by lang attribute in <html> tag). 
