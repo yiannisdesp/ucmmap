@@ -1,14 +1,26 @@
-var ucmmap = (function(lang, kmlBaseUrl){
+var ucmmap = (function(kmlBaseUrl){
     var map,
-    lang = lang, // this can be set
+    languageDetection = function(){
+        var l = document.querySelector('html').attributes.lang;
+        if ( l !== 'undefined' && l !== undefined ) {
+            l = l.value;
+            if ( l.indexOf('en') > -1 ) return 'en';
+            if ( l.indexOf('el') > -1 ) return 'el';
+            return 'en';
+        } else {
+            return 'en';
+        }
+    },
+    lang = languageDetection(),
     local = (window.location.hostname).indexOf('local') > -1 ? true : false,
+    dBaseUrl = local ? 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/kml/' : kmlBaseUrl,
     kmlDataSources = {
-        lefkosia: 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/kml/lefkosia-district-'+ lang +'.kml?t=' + Date.now(),
-        larnaka: 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/kml/larnaka-district-'+ lang +'.kml?t=' + Date.now(),
-        ammochostos: 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/kml/ammochostos-district-'+ lang +'.kml?t=' + Date.now(),
-        lemesos: 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/kml/lemesos-district-'+ lang +'.kml?t=' + Date.now(),
-        keryneia: 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/kml/keryneia-district-'+ lang +'.kml?t=' + Date.now(),
-        paphos: 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/kml/paphos-district-'+ lang +'.kml?t=' + Date.now(),
+        lefkosia: dBaseUrl + 'lefkosia-district-'+ lang +'.kml?t=' + ( local ? Date.now() : 'v1' ),
+        larnaka: dBaseUrl + 'larnaka-district-'+ lang +'.kml?t=' + ( local ? Date.now() : 'v1' ),
+        ammochostos: dBaseUrl + 'ammochostos-district-'+ lang +'.kml?t=' + ( local ? Date.now() : 'v1' ),
+        lemesos: dBaseUrl + 'lemesos-district-'+ lang +'.kml?t=' + ( local ? Date.now() : 'v1' ),
+        keryneia: dBaseUrl + 'keryneia-district-'+ lang +'.kml?t=' + ( local ? Date.now() : 'v1' ),
+        paphos: dBaseUrl + 'paphos-district-'+ lang +'.kml?t=' + ( local ? Date.now() : 'v1' ),
     },
     layers = {},
     districts = {
@@ -82,7 +94,6 @@ var ucmmap = (function(lang, kmlBaseUrl){
         // bind generated links with click event
         setTimeout(function(){
             for ( k2 in document.querySelectorAll('a.maplink') ){
-                console.log(document.querySelectorAll('a.maplink')[k2]);
                 document.querySelectorAll('a.maplink')[k2].addEventListener('click', function(e){
                     showDistrict(this.dataset.lat, this.dataset.lng);
                 });
@@ -90,7 +101,7 @@ var ucmmap = (function(lang, kmlBaseUrl){
         }, 500);
     };
     return {init: render};
-})('en', 'http://localhost/ucmmap/kml/');
+})('http://localhost/ucmmap/kml/');
 
 function initMap(){
     ucmmap.init();
