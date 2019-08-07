@@ -1,4 +1,4 @@
-var ucmmap = (function(kmlBaseUrl){
+var ucmmap = (function(){
     var map,
     languageDetection = function(){
         var l = document.querySelector('html').attributes.lang;
@@ -13,7 +13,7 @@ var ucmmap = (function(kmlBaseUrl){
     },
     lang = languageDetection(),
     local = (window.location.hostname).indexOf('local') > -1 ? true : false,
-    dBaseUrl = local ? 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/kml/' : kmlBaseUrl,
+    dBaseUrl = local ? 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/kml/' : document.getElementById('map').dataset.kmlbase,
     kmlDataSources = {
         lefkosia: dBaseUrl + 'lefkosia-district-'+ lang +'.kml?t=' + ( local ? Date.now() : 'v1' ),
         larnaka: dBaseUrl + 'larnaka-district-'+ lang +'.kml?t=' + ( local ? Date.now() : 'v1' ),
@@ -101,7 +101,7 @@ var ucmmap = (function(kmlBaseUrl){
         }, 500);
     };
     return {init: render};
-})('http://localhost/ucmmap/kml/');
+})();
 
 function initMap(){
     ucmmap.init();
