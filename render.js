@@ -1,15 +1,15 @@
 var ucmmap = (function(){
     var map,
+    defaultLocale = 'en',
     languageDetection = function(){
         var l = document.querySelector('html').attributes.lang;
         if ( l !== 'undefined' && l !== undefined ) {
             l = l.value;
             if ( l.indexOf('en') > -1 ) return 'en';
             if ( l.indexOf('el') > -1 ) return 'el';
-            return 'en';
-        } else {
-            return 'en';
+            return defaultLocale;
         }
+        return defaultLocale;
     },
     lang = languageDetection(),
     local = (window.location.hostname).indexOf('local') > -1 ? true : false,
@@ -68,10 +68,14 @@ var ucmmap = (function(){
         }
     },
     legendHTML = '',
+    zoomSet = false,
     showDistrict = function(lat, lng){
         var center = new google.maps.LatLng(lat, lng);
         map.panTo(center);
-        map.setZoom(10);
+        if (!zoomSet){
+            map.setZoom(11);
+            zoomSet = true;
+        }
     },
     render = function(){
         map = new google.maps.Map(document.getElementById('map'), {
@@ -87,17 +91,29 @@ var ucmmap = (function(){
                 map: map
             });
             // generate legend html
-            legendHTML += '<div class="item"><a href="#" class="maplink" data-lat="'+ districts[k].latlng.lat +'" data-lng="'+ districts[k].latlng.lng +'">'+ districts[k].name[lang] +'</a></div>';
+            legendHTML += `
+                <div class="item">
+                    <a href="#" class="maplink d-${k}" data-lat="${districts[k].latlng.lat}" data-lng="${districts[k].latlng.lng}">
+                        ${districts[k].name[lang]}
+                    </a>
+                </div>
+            `;
         }
+        legendHTML += '<div style="text-align:right;font-size:11px;margin-right:10px;clear:both;"><br><i>OpenDataCy</i></div>';
         // render generated legend markup
         document.getElementById('legend').innerHTML = legendHTML;
         // bind generated links with click event
         setTimeout(function(){
-            for ( k2 in document.querySelectorAll('a.maplink') ){
-                document.querySelectorAll('a.maplink')[k2].addEventListener('click', function(e){
+            document.querySelectorAll('.mmap-wrap a.maplink').forEach(function (node) {
+                node.addEventListener('click', function (e) {
+                    e.preventDefault();
                     showDistrict(this.dataset.lat, this.dataset.lng);
+                    document.querySelectorAll('.mmap-wrap .item').forEach(function (node) {
+                        node.classList.remove('active');
+                    });
+                    this.parentNode.classList.add('active');
                 });
-            }
+            });
         }, 500);
     };
     return {init: render};
