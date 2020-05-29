@@ -79,6 +79,11 @@
     background-color: rgba(43, 52, 129, 0.6); 
 }
 
+@media(max-width: 1199px){
+    .mmap-wrap .map-container { width: 70%; }
+    .mmap-wrap .legend-container { width: 30%; }
+}
+
 @media(max-width: 715px){
     .mmap-wrap .map-container,
     .mmap-wrap .legend-container {
@@ -86,13 +91,15 @@
     }
     .mmap-wrap .legend-container {
         height: initial;
-    }
-    .mmap-wrap .legend-container > .item {
-        float: left;
+        text-align: center;;
     }
     .mmap-wrap .legend-container > .item,
     .mmap-wrap .legend-container > .item > a {
         display: inline-block;
         width: initial;
+    }
+    .mmap-wrap .legend-container > .item > a {
+        padding: 2px 2px;
+        line-height: 20px;
     }
 }
