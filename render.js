@@ -32,35 +32,35 @@ var ucmmap = (function(){
             }
         },
         larnaka: {
-            latlng: {lat: 34.9081331, lng: 33.3187845},
+            latlng: {lat: 34.9117301, lng: 33.6029347},
             name: {
                 en: 'Larnaka District',
                 el: 'Επαρχία Λάρνακας'
             }
         },
         ammochostos: {
-            latlng: {lat: 35.3088792, lng: 33.8641198},
+            latlng: {lat: 35.051554, lng: 33.8418132},
             name: {
                 en: 'Ammochostos District',
                 el: 'Επαρχία Αμμοχώστου'
             }
         },
         lemesos: {
-            latlng: {lat: 34.7970721, lng: 32.8136594},
+            latlng: {lat: 34.6903828, lng: 33.0286117},
             name: {
                 en: 'Lemesos District',
                 el: 'Επαρχία Λεμεσού'
             }
         },
         keryneia: {
-            latlng: {lat: 35.3155988, lng: 33.1554084},
+            latlng: {lat: 35.319376, lng: 33.323493},
             name: {
                 en: 'Keryneia District',
                 el: 'Επαρχία Κερύνειας'
             }
         },
         paphos: {
-            latlng: {lat: 34.9751672, lng: 32.5058976},
+            latlng: {lat: 34.7651055, lng: 32.4173176},
             name: {
                 en: 'Paphos District',
                 el: 'Επαρχία Πάφου'
@@ -83,7 +83,7 @@ var ucmmap = (function(){
             zoom: 10,
             mapTypeId: 'roadmap'
         });
-        for ( k in kmlDataSources ){
+        for ( var k in kmlDataSources ){
             // render layer
             layers[k] = new google.maps.KmlLayer(kmlDataSources[k], {
                 suppressInfoWindows: false,
