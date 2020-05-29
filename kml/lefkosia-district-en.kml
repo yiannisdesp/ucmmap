@@ -21,15 +21,30 @@
 			<name>NICOSIA MUNICIPALITIES</name>
 			<Placemark id="ID_00474">
 				<name>DIMOS AGIOU DOMETIOU</name>
-				<Snippet></Snippet>
-				<description><p>P.O.Box: 27531<br>
-2430 Agios Dometios<br>
-Cyprus<br>
-<strong>Mayor:</strong> Kostas Petrou<br>
-<strong>Tel.:</strong> +357 22392000<br>
-<strong>Fax</strong>: +357 22778956<br>
-<strong>Email:</strong> <a href="mailto:info@dad.org.cy">info@dad.org.cy</a><br>
-<strong>Website:</strong> <a href="http://www.dad.org.cy/" target="_blank" rel="noopener noreferrer">http://www.dad.org.cy/</a></p></description>
+				<Snippet>
+					<![CDATA[
+					<p>P.O.Box: 27531<br>
+					2430 Agios Dometios<br>
+					Cyprus<br>
+					<strong>Mayor:</strong> Kostas Petrou<br>
+					<strong>Tel.:</strong> +357 22392000<br>
+					<strong>Fax</strong>: +357 22778956<br>
+					<strong>Email:</strong> <a href="mailto:info@dad.org.cy">info@dad.org.cy</a><br>
+					<strong>Website:</strong> <a href="http://www.dad.org.cy/" target="_blank" rel="noopener noreferrer">http://www.dad.org.cy/</a></p>
+					]]>
+				</Snippet>
+				<description>
+					<![CDATA[
+					<p>P.O.Box: 27531<br>
+					2430 Agios Dometios<br>
+					Cyprus<br>
+					<strong>Mayor:</strong> Kostas Petrou<br>
+					<strong>Tel.:</strong> +357 22392000<br>
+					<strong>Fax</strong>: +357 22778956<br>
+					<strong>Email:</strong> <a href="mailto:info@dad.org.cy">info@dad.org.cy</a><br>
+					<strong>Website:</strong> <a href="http://www.dad.org.cy/" target="_blank" rel="noopener noreferrer">http://www.dad.org.cy/</a></p>
+					]]>
+				</description>
 				<styleUrl>#documentStyle</styleUrl>
 				<MultiGeometry>
 					<Polygon>
