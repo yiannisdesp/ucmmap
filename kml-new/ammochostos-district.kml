@@ -35,11 +35,6 @@
 					</Polygon>
 				</MultiGeometry>
 			</Placemark>
-			<!-- <Placemark id="ID_10306">
-				<name>AKANTHOU</name>
-				<Snippet></Snippet>
-				<styleUrl>#style1</styleUrl>
-			</Placemark> -->
 			<Placemark id="ID_00299">
 				<name><![CDATA[ammochostos_title]]></name>
 				<description><![CDATA[ammochostos_desc]]></description>
@@ -156,17 +151,6 @@
 					</Polygon>
 				</MultiGeometry>
 			</Placemark>
-			<!-- <Placemark id="ID_10299">
-				<name>AMMOCHOSTOU</name>
-				<Snippet></Snippet>
-				<styleUrl>#style1</styleUrl>
-			</Placemark> -->
-			<!-- <Placemark id="ID_10300">
-				<name><![CDATA[agia_napa_title]]></name>
-				<description><![CDATA[agia_napa_desc]]></description>
-				<Snippet></Snippet>
-				<styleUrl>#style1</styleUrl>
-			</Placemark> -->
 			<Placemark id="ID_00300">
 				<name><![CDATA[agia_napa_title]]></name>
 				<description><![CDATA[agia_napa_desc]]></description>
@@ -219,16 +203,6 @@
 					</Polygon>
 				</MultiGeometry>
 			</Placemark>
-			<!-- <Placemark id="ID_10302">
-				<name>DERYNEIA</name>
-				<Snippet></Snippet>
-				<styleUrl>#style1</styleUrl>
-			</Placemark> -->
-			<!-- <Placemark id="ID_10305">
-				<name>LEFKONOIKO</name>
-				<Snippet></Snippet>
-				<styleUrl>#style1</styleUrl>
-			</Placemark> -->
 			<Placemark id="ID_00305">
 				<name><![CDATA[lefkoniko_title]]></name>
 				<description><![CDATA[lefkoniko_desc]]></description>
@@ -246,11 +220,6 @@
 					</Polygon>
 				</MultiGeometry>
 			</Placemark>
-			<!-- <Placemark id="ID_10304">
-				<name>LYSI</name>
-				<Snippet></Snippet>
-				<styleUrl>#style1</styleUrl>
-			</Placemark> -->
 			<Placemark id="ID_00304">
 				<name><![CDATA[lysi_title]]></name>
 				<description><![CDATA[lysi_desc]]></description>
@@ -268,11 +237,6 @@
 					</Polygon>
 				</MultiGeometry>
 			</Placemark>
-			<!-- <Placemark id="ID_10301">
-				<name>PARALIMNI</name>
-				<Snippet></Snippet>
-				<styleUrl>#style1</styleUrl>
-			</Placemark> -->
 			<Placemark id="ID_00301">
 				<name><![CDATA[paralimni_title]]></name>
 				<description><![CDATA[paralimni_desc]]></description>
@@ -334,11 +298,6 @@
 					</Polygon>
 				</MultiGeometry>
 			</Placemark>
-			<!-- <Placemark id="ID_10303">
-				<name>SOTIRA</name>
-				<Snippet></Snippet>
-				<styleUrl>#style1</styleUrl>
-			</Placemark> -->
 		</Folder>
 	</Document>
 </kml>
