@@ -3,14 +3,14 @@ var ucmmap = (function(){
     infowindow,
     marker,
     local = (window.location.hostname).indexOf('local') > -1 ? true : false,
-    dBaseUrl = local ? 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/kml-new/' : document.getElementById('map').dataset.kmlbase,
+    dBaseUrl = local ? 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/kml/' : document.getElementById('map').dataset.kmlbase,
     kmlDataSources = {
-        lefkosia_district: dBaseUrl + 'lefkosia-district.kml?t=' + ( local ? Date.now() : 'v1' ),
-        larnaka_district: dBaseUrl + 'larnaka-district.kml?t=' + ( local ? Date.now() : 'v1' ),
-        ammochostos_district: dBaseUrl + 'ammochostos-district.kml?t=' + ( local ? Date.now() : 'v1' ),
-        lemesos_district: dBaseUrl + 'lemesos-district.kml?t=' + ( local ? Date.now() : 'v1' ),
-        keryneia_district: dBaseUrl + 'keryneia-district.kml?t=' + ( local ? Date.now() : 'v1' ),
-        paphos_district: dBaseUrl + 'paphos-district.kml?t=' + ( local ? Date.now() : 'v1' ),
+        lefkosia_district: dBaseUrl + 'lefkosia-district.kml?t=' + ( local ? Date.now() : 'v6' ),
+        larnaka_district: dBaseUrl + 'larnaka-district.kml?t=' + ( local ? Date.now() : 'v6' ),
+        ammochostos_district: dBaseUrl + 'ammochostos-district.kml?t=' + ( local ? Date.now() : 'v6' ),
+        lemesos_district: dBaseUrl + 'lemesos-district.kml?t=' + ( local ? Date.now() : 'v6' ),
+        keryneia_district: dBaseUrl + 'keryneia-district.kml?t=' + ( local ? Date.now() : 'v6' ),
+        paphos_district: dBaseUrl + 'paphos-district.kml?t=' + ( local ? Date.now() : 'v6' ),
     },
     layers = {},
     districts_coords = {
@@ -54,11 +54,10 @@ var ucmmap = (function(){
             `;
 
             layers[k].addListener('click', function (e) {
-                console.log(e);
                 if (infowindow) infowindow.close();
-                var content = '<h4 style="margin:0;margin-bottom:10px;">' + e.featureData.name + '</h4>';
+                var content = '<h4 style="margin:0;margin-bottom:10px;">' + __i18n.translate(e.featureData.name) + '</h4>';
                 if (e.featureData.hasOwnProperty('description') && (e.featureData.description).length > 0) {
-                    content += '<div style="font-family:\'open sans\',\'HelveticaNeue\',\'Helvetica Neue\',\'Helvetica-Neue\',Helvetica,Arial,sans-serif">' + e.featureData.description + '</div>';
+                    content += '<div style="font-family:\'open sans\',\'HelveticaNeue\',\'Helvetica Neue\',\'Helvetica-Neue\',Helvetica,Arial,sans-serif">' + __i18n.translate(e.featureData.description) + '</div>';
                 }
                 infowindow = new google.maps.InfoWindow({
                     content: content
@@ -69,6 +68,7 @@ var ucmmap = (function(){
                     map: map
                 });
                 infowindow.open(map, marker);
+                map.panTo(marker.getPosition());
             });
 
         }
