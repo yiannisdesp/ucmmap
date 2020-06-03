@@ -72,7 +72,7 @@ var ucmmap = (function(){
             });
 
         }
-        legendHTML += '<div style="text-align:right;font-size:11px;margin-right:10px;clear:both;"><br><i>OpenDataCy</i></div>';
+        legendHTML += '<div style="text-align:right;font-size:11px;margin-right:10px;clear:both;"><br><a href="https://www.data.gov.cy/dataset/διοικητικά-όρια-ενοριών-διοικητικός-χάρτης" target="_blank" title="Διοικητικά Όρια Ενοριών - Διοικητικός Χάρτης"><i>Boundary dataset based on OpenDataCy</i></a></div>';
         // render generated legend markup
         document.getElementById('legend').innerHTML = legendHTML;
         // bind generated links with click event
