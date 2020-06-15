@@ -5,6 +5,7 @@ var ucmmap = (function(){
     local = (window.location.hostname).indexOf('local') > -1 ? true : false,
     dBaseUrl = local ? 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/kml/' : document.getElementById('map').dataset.kmlbase,
     kmlDataSources = {
+        districts: dBaseUrl + 'districts.kml?t=' + ( local ? Date.now() : 'v6' ),
         lefkosia_district: dBaseUrl + 'lefkosia-district.kml?t=' + ( local ? Date.now() : 'v6' ),
         larnaka_district: dBaseUrl + 'larnaka-district.kml?t=' + ( local ? Date.now() : 'v6' ),
         ammochostos_district: dBaseUrl + 'ammochostos-district.kml?t=' + ( local ? Date.now() : 'v6' ),
