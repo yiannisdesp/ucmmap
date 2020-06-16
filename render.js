@@ -5,13 +5,13 @@ var ucmmap = (function(){
     local = (window.location.hostname).indexOf('local') > -1 ? true : false,
     dBaseUrl = local ? 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/kml/' : document.getElementById('map').dataset.kmlbase,
     kmlDataSources = {
-        districts: dBaseUrl + 'districts.kml?t=' + ( local ? Date.now() : 'v6' ),
-        lefkosia_district: dBaseUrl + 'lefkosia-district.kml?t=' + ( local ? Date.now() : 'v6' ),
-        larnaka_district: dBaseUrl + 'larnaka-district.kml?t=' + ( local ? Date.now() : 'v6' ),
-        ammochostos_district: dBaseUrl + 'ammochostos-district.kml?t=' + ( local ? Date.now() : 'v6' ),
-        lemesos_district: dBaseUrl + 'lemesos-district.kml?t=' + ( local ? Date.now() : 'v6' ),
-        keryneia_district: dBaseUrl + 'keryneia-district.kml?t=' + ( local ? Date.now() : 'v6' ),
-        paphos_district: dBaseUrl + 'paphos-district.kml?t=' + ( local ? Date.now() : 'v6' ),
+        districts: dBaseUrl + 'districts.kml?t=' + ( local ? Date.now() : 'v9' ),
+        lefkosia_district: dBaseUrl + 'lefkosia-district.kml?t=' + ( local ? Date.now() : 'v9' ),
+        larnaka_district: dBaseUrl + 'larnaka-district.kml?t=' + ( local ? Date.now() : 'v9' ),
+        ammochostos_district: dBaseUrl + 'ammochostos-district.kml?t=' + ( local ? Date.now() : 'v9' ),
+        lemesos_district: dBaseUrl + 'lemesos-district.kml?t=' + ( local ? Date.now() : 'v9' ),
+        keryneia_district: dBaseUrl + 'keryneia-district.kml?t=' + ( local ? Date.now() : 'v9' ),
+        paphos_district: dBaseUrl + 'paphos-district.kml?t=' + ( local ? Date.now() : 'v9' ),
     },
     layers = {},
     districts_coords = {
@@ -45,6 +45,9 @@ var ucmmap = (function(){
                 preserveViewport: true,
                 map: map
             });
+
+            if ( k === 'districts' ) continue;
+
             // generate legend html
             legendHTML += `
             <div class="item">

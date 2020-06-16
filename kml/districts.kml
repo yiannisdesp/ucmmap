@@ -16,7 +16,7 @@
 	</StyleMap>
 	<Style id="sn_ylw-pushpin_copy2">
 		<LineStyle>
-			<color>ffff0000</color>
+			<color>ffd4d4d4</color>
 			<width>0.4</width>
 		</LineStyle>
 		<PolyStyle>
