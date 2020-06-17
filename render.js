@@ -5,13 +5,13 @@ var ucmmap = (function(){
     local = (window.location.hostname).indexOf('local') > -1 ? true : false,
     dBaseUrl = local ? 'https://raw.githubusercontent.com/yiannisdesp/ucmmap/master/kml/' : document.getElementById('map').dataset.kmlbase,
     kmlDataSources = {
-        districts: dBaseUrl + 'districts.kml?t=' + ( local ? Date.now() : 'v9' ),
-        lefkosia_district: dBaseUrl + 'lefkosia-district.kml?t=' + ( local ? Date.now() : 'v9' ),
-        larnaka_district: dBaseUrl + 'larnaka-district.kml?t=' + ( local ? Date.now() : 'v9' ),
-        ammochostos_district: dBaseUrl + 'ammochostos-district.kml?t=' + ( local ? Date.now() : 'v9' ),
-        lemesos_district: dBaseUrl + 'lemesos-district.kml?t=' + ( local ? Date.now() : 'v9' ),
-        keryneia_district: dBaseUrl + 'keryneia-district.kml?t=' + ( local ? Date.now() : 'v9' ),
-        paphos_district: dBaseUrl + 'paphos-district.kml?t=' + ( local ? Date.now() : 'v9' ),
+        districts: dBaseUrl + 'districts.kml?t=' + (local ? Date.now() : 'v1.1'),
+        lefkosia_district: dBaseUrl + 'lefkosia-district.kml?t=' + ( local ? Date.now() : 'v1.1' ),
+        larnaka_district: dBaseUrl + 'larnaka-district.kml?t=' + ( local ? Date.now() : 'v1.1' ),
+        ammochostos_district: dBaseUrl + 'ammochostos-district.kml?t=' + ( local ? Date.now() : 'v1.1' ),
+        lemesos_district: dBaseUrl + 'lemesos-district.kml?t=' + ( local ? Date.now() : 'v1.1' ),
+        keryneia_district: dBaseUrl + 'keryneia-district.kml?t=' + ( local ? Date.now() : 'v1.1' ),
+        paphos_district: dBaseUrl + 'paphos-district.kml?t=' + ( local ? Date.now() : 'v1.1' )
     },
     layers = {},
     districts_coords = {
@@ -46,17 +46,6 @@ var ucmmap = (function(){
                 map: map
             });
 
-            if ( k === 'districts' ) continue;
-
-            // generate legend html
-            legendHTML += `
-            <div class="item">
-                <a href="#" class="maplink d-${k}" data-lat="${districts_coords[k].lat}" data-lng="${districts_coords[k].lng}">
-                    ${__i18n.translate(k)}
-                </a>
-            </div>
-            `;
-
             layers[k].addListener('click', function (e) {
                 if (infowindow) infowindow.close();
                 var content = '<h4 style="margin:0;margin-bottom:10px;">' + __i18n.translate(e.featureData.name) + '</h4>';
@@ -74,6 +63,17 @@ var ucmmap = (function(){
                 infowindow.open(map, marker);
                 map.panTo(marker.getPosition());
             });
+
+            if ( k === 'districts' ) continue;
+
+            // generate legend html
+            legendHTML += `
+            <div class="item">
+                <a href="#" class="maplink d-${k}" data-lat="${districts_coords[k].lat}" data-lng="${districts_coords[k].lng}">
+                    ${__i18n.translate(k)}
+                </a>
+            </div>
+            `;
 
         }
         legendHTML += '<div style="text-align:right;font-size:11px;margin-right:10px;clear:both;"><br><a href="https://www.data.gov.cy/dataset/διοικητικά-όρια-ενοριών-διοικητικός-χάρτης" target="_blank" title="Διοικητικά Όρια Ενοριών - Διοικητικός Χάρτης"><i>Boundary dataset based on OpenDataCy</i></a></div>';
